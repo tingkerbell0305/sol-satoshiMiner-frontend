@@ -2,9 +2,8 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 import { config } from "../../config";
-// import solIcon from "../assets/SOLIcon.png";
-import tgIcon from "../assets/TGIcon.png";
-import twIcon from "../assets/TWIcon.png";
+import tgIcon from "../../assets/tgIcon.png";
+import twIcon from "../../assets/twIcon.png";
 
 export default function Footer() {
   return (
@@ -24,7 +23,7 @@ export default function Footer() {
       <center>
       <Typography variant="h8" marginTop={4}>
         <br/>
-        COPYRIGHT © 2024 Orange Farmer
+        Copyright 2024 Satoshi Miner Ltd.
       </Typography>
       </center>
     </div>

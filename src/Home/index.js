@@ -6,24 +6,16 @@ import NutritionFacts from "./components/NutritionFacts";
 import ReferralLink from "./components/ReferralLink";
 import { useWallet } from "@solana/wallet-adapter-react";
 import Footer from "./components/Footer";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from '@material-ui/core';
-import {
-  WalletDialogProvider as MaterialUIWalletDialogProvider,
-  WalletMultiButton as MaterialUIWalletMultiButton,
-  WalletConnectButton
-} from '@solana/wallet-adapter-material-ui';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import {
+//   WalletDialogProvider as MaterialUIWalletDialogProvider,
+//   WalletMultiButton as MaterialUIWalletMultiButton,
+//   WalletConnectButton
+// } from '@solana/wallet-adapter-material-ui';
 
 
 import "../index.css";
-import SolanaHeartImg from './assets/solana-heart.svg';
-import CrayonHeartImg from './assets/crayon-heart.svg';
 
 const Wrapper = styled("div")(({ theme }) => ({
   position: 'relative',
@@ -35,10 +27,10 @@ const Wrapper = styled("div")(({ theme }) => ({
   },
 }));
 
-const WalletButton = styled("div")(() => ({
-  display: 'flex',
-  flexDirection: 'row-reverse'
-}))
+// const WalletButton = styled("div")(() => ({
+//   display: 'flex',
+//   flexDirection: 'row-reverse'
+// }))
 
 export default function Home() {
   //const { address } = useAuthContext();
@@ -47,7 +39,7 @@ export default function Home() {
   return (
     <div>
       <Wrapper>
-          <WalletButton>
+          {/* <WalletButton>
             <MaterialUIWalletMultiButton variant="text" style={{
               border: "2px solid black",
               fontWeight: 900,
@@ -55,7 +47,7 @@ export default function Home() {
               borderRadius: '10px',
               color: 'black'
             }}/>
-          </WalletButton>
+          </WalletButton> */}
           <Header />
           <BakeCard />
           <NutritionFacts />
